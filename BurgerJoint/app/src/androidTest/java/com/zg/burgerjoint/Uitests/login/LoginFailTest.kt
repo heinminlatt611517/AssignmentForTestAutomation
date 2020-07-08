@@ -1,5 +1,6 @@
 package com.zg.burgerjoint.Uitests.login
 
+import Utils.EM_LOGIN_FAIL_ERROR_MESSAGE
 import android.content.Intent
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.Espresso.onView
@@ -14,7 +15,6 @@ import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import androidx.test.rule.ActivityTestRule
 import com.zg.burgerjoint.R
 import com.zg.burgerjoint.activities.LoginActivity
-import com.zg.burgerjoint.utils.EM_LOGIN_FAIL_ERROR_MESSAGE
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
