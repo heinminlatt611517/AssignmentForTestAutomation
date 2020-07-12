@@ -30,6 +30,9 @@
     <dimen name="text_big_2x">60sp</dimen>
     <dimen name="text_big_3x">80sp</dimen>
 
+    <dimen name="block_width">150dp</dimen>
+
+
     <!--App Specific-->
     <dimen name="fab_margin">16dp</dimen>
 </resources>

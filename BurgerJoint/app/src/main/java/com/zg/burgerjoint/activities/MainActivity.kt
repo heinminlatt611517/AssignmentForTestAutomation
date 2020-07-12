@@ -17,6 +17,7 @@ import androidx.core.util.Pair
 import androidx.recyclerview.widget.GridLayoutManager
 import com.bumptech.glide.Glide
 import com.zg.burgerjoint.R
+import com.zg.burgerjoint.activity_game
 import com.zg.burgerjoint.adapters.BurgerAdapter
 import com.zg.burgerjoint.data.vos.BurgerVO
 import com.zg.burgerjoint.mvp.presenters.MainPresenter
@@ -44,6 +45,11 @@ class MainActivity : BaseActivity(), MainView {
         setUpListeners()
         setUpRecycler()
         mPresenter.onUIReady(this)
+
+
+        btnPlayGame.setOnClickListener {
+           startActivity(activity_game.newIntent(this))
+        }
     }
 
     private fun setUpAnimations(){
@@ -147,4 +153,5 @@ class MainActivity : BaseActivity(), MainView {
         viewToAnimate.alpha = 0f
         return viewToAnimate
     }
+
 }
